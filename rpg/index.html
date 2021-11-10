@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+	<head>
+
+		<meta charset="UTF-8">
+	 	<title>Dragon ball : RPG </title>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+
+</head>
+
+	<body id="body">
+
+		<div class="container text-center">
+
+			<div id="game-title" class="row mt-2">
+				<div class="col-md-8 offset-md-2 offset-md-right-2">
+					<h1>Dragon ball z: rpg</h1>
+				</div>
+			</div>
+
+			<div id="game-instructions" class="row mt-2">
+				<div class="col-md-8 offset-md-2 offset-md-right-2">
+				</div>
+			</div>
+
+				<!-- este div é preenchido com personagens quando a página da web carrega -->
+
+				<!-- <div class="character col-md-2" id="0">
+    				<button type="button" class="btn btn-default m-3 p-2">
+	        			<p>Iron Man</p>
+	        			<img src="assets/images/Iron_Man.png" class="character-image">
+	        			<p>141</p>
+		    		</button>
+				</div> -->
+
+			<div id="characters" class="row mt-2"></div>
+
+
+			<div class="row mt-2">
+
+					<!-- 
+					<button type="button" class="btn btn-default m-3 p-2">
+						<p>goku</p>
+						<img src="assets/images/goku.png" class="character-image">
+						<p>271</p>
+					</button> 
+					-->
+				<div class="col-md-2" id="player-character">YOUR CHARACTER</div>
+
+				<div class="col-md-2 offset-md-3">
+					<div class="row">
+						<div class="col-md-12">
+							<button type="button" id="attack-button" class="btn btn-primary">Ataque</button>
+						</div>
+					</div><br>
+					<div class="row">
+						<div class="col-md-12" id="game-feedback">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 offset-md-2" id="enemy-character">ENEMY CHARACTER</div>
+
+			</div>
+
+			<div class="row mt-3">
+			</div>
+
+			<!--   O vídeo é silenciado e reproduzido automaticamente, colocado após os principais elementos DOM para desempenho e tem um substituto de imagem  -->
+		<!-- 	<video autoplay loop id="video-background" muted plays-inline>
+	  			<source src="assets/videos/blue motion background.mp4" type="video/mp4">
+			</video> -->
+
+		</div>
+
+		<!-- Load the associated JavaScript files -->
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	</body>
+
+</html>
